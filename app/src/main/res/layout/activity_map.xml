@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/registerLocationTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registration Location"
+            android:textAlignment="center"
+            android:textSize="30dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="640dp"
+        android:orientation="vertical" >
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapView"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            tools:context="com.example.music_application.MapActivity" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/back_to_main_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:text="Back"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/purple_500"/>
+
+</LinearLayout>

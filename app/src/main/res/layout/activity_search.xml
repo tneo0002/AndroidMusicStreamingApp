@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="25dp"
+            android:layout_height="80dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_back" />
+
+
+        <ImageButton
+            android:id="@+id/searchBtn"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/backBtn"
+            android:background="@color/white"
+            android:src="@mipmap/ic_search_round" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_toEndOf="@+id/searchBtn"
+            android:hint="Keyword"
+            android:paddingHorizontal="15dp"
+            android:paddingTop="30dp"
+            android:textStyle="italic" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rV"
+        android:layout_width="match_parent"
+        android:layout_height="520sp"
+        android:layout_marginTop="10dp"
+        android:scrollbars="vertical" />
+
+
+    <RelativeLayout
+        android:id="@+id/player"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/albumImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:src="@mipmap/anna" />
+
+        <TextView
+            android:id="@+id/trackName"
+            android:layout_width="120dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/albumImage"
+            android:layout_weight="1"
+            android:paddingHorizontal="10dp"
+            android:text="Too far"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/artistName"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/trackName"
+            android:layout_marginTop="3dp"
+            android:layout_toEndOf="@+id/albumImage"
+            android:layout_weight="1"
+            android:paddingHorizontal="10dp"
+            android:text="Anna F" />
+
+        <ImageButton
+            android:id="@+id/playBtn"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="-2dp"
+            android:layout_toLeftOf="@+id/musicScreenLink"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:src="@mipmap/ic_play"
+            android:background="@color/white"/>
+
+        <ImageButton
+            android:id="@+id/musicScreenLink"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:padding="8dp"
+            android:src="@mipmap/ic_hamburger" />
+    </RelativeLayout>
+</LinearLayout>

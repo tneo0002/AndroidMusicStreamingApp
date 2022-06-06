@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "893795559636",
+    "project_id": "fit5046-musicapplication",
+    "storage_bucket": "fit5046-musicapplication.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:893795559636:android:07812a5a6bee14749d3341",
+        "android_client_info": {
+          "package_name": "com.example.music_application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "893795559636-cu337gu7tvvpshr6s9c0tbjfl4ja8l68.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYlgjGgztSVodNBjOzRolWSCKotN7t99s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "893795559636-cu337gu7tvvpshr6s9c0tbjfl4ja8l68.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

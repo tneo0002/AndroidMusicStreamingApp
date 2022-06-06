@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:shape="rectangle" >   <!-- Set the background to rectangle -->
+
+    <!-- Set the background colour to black -->
+    <solid android:color="@color/black" />
+
+    <!-- Set colour and width for the edge of screen-->
+    <stroke
+        android:color="#CC3299"
+        android:width="1.2dp" />
+
+
+</shape>
